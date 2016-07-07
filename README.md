@@ -1,4 +1,5 @@
 This script creates config file `dhcpd.conf` for dhcpd daemon using a template:  
+
 		host host1 {
 			hardware ethernet host1_MAC_address;
 			fixed-address host1_ip_address;
@@ -7,6 +8,7 @@ This script creates config file `dhcpd.conf` for dhcpd daemon using a template:
 			option BITI.transfer-mode “tftp”;
 			option BITI.config-file-name “host1.confg”;
 		}   
+
 ##### How it works
 First step: it parses `Network Addresses.xlsx` file for getting lists of ips, hostnames and mac-addresses.  
 (add your data into the appropriate columns)  
